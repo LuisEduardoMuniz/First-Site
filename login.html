@@ -16,14 +16,17 @@
     <a href="acesso.html">Acesso</a>
   </header> 
   <body>
-    <div>
-      <p>Não possui conta? Então cadastre-se clicando no botão.</p>
-    <button><a href="cadastro.html"> Cadastre-se</a> </button>
-    </div>
-    <div>
-      <p>Entre clicando no botão abaixo.</p>
-    
-      <button><a href="login.html"> Login</a> </button>
-    </div>
-  </body>
+    <form action="login" method="post">
+        <label>
+            <span>Login</span>
+            <input type="text" name="login" value="RaimundoTonhão"/>
+        </label>
+        <label>
+            <span>Senha</span>
+            <input type="text" name="Senha" value="12345"/>
+        </label>
+        <button>Entrar</button>
+    </form>
+    <a href=senhaEsquecida.html> Esqueceu a senha?</a>
+    <a href=loginEsquecido.html> Esqueceu o Login?</a>
 
