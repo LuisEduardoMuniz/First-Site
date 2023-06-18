@@ -1,0 +1,92 @@
+body {
+    background-color: #400F16;
+    margin-left: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+    color: #FF324C;
+}
+
+nav,
+footer {
+    color: #e26e02c7;
+    background-color: #970f2352;
+}
+
+nav h1 {
+    color: #e26e02c7;
+}
+
+div h1 {
+    color: #FF324C;
+}
+
+p {
+    color: #ffc038c7;
+}
+
+ul {
+    color: #ffc038c7;
+}
+
+label {
+    color: #e26e02c7;
+}
+
+footer {
+    color: #FF324C;
+}
+
+a {
+    color: #e26e02c7;
+
+}
+
+a:hover {
+    color: #FF324C;
+
+}
+
+
+nav {
+    text-align: center;
+    border: 1px solid #FF324C;
+    border-width: 1px 40px;
+    border-radius: 90px 500px 10px;
+    padding: 20px;
+}
+
+#motos {
+    text-align: center;
+    border: 1px solid #FF324C;
+    border-width: 1px 10px;
+    border-radius: 90px 100px;
+    padding: 20px;
+}
+
+#motos01 {
+    text-align: center;
+
+}
+
+footer {
+    border: 1px solid #FF324C;
+    border-width: 1px 10px;
+    border-radius: 90px 100px;
+    padding: 10px;
+    margin: 50px 1000px 30px 0px;
+}
+
+#layoutmotos {
+    text-align: center;
+    border: 1px solid #FF324C;
+    border-width: 1px 10px;
+    border-radius: 90px 100px;
+    padding: 20px;
+    margin: 20px 400px 20px 400px;
+}
+
+#titulomotos {
+    text-align: center;
+}
