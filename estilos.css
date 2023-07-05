@@ -1,92 +1,123 @@
+:root {
+  /*- root(raiz) é o comando que sobressai todos os outros elementos no code css, adicionando variáveis no root o comando se sobressai sobre todo o CSS no site, variáveis é o que deixa um "padrão" fixo do site, como cor, fonte da letra e etc -*/
+  --backgroundcolor: #400f16;
+  --footer: #e26e02c7;
+  --font: "Times New Roman", Times, serif;
+}
 body {
-    background-color: #400F16;
-    margin-left: 20px;
-    font-family: 'Times New Roman', Times, serif;
+  background-color: #400f16;
+  margin-left: 20px;
+  font-family: "Times New Roman", Times, serif;
 }
 
 header {
-    color: #FF324C;
+  color: #ff324c;
 }
 
 nav,
 footer {
-    color: #e26e02c7;
-    background-color: #970f2352;
+  color: #e26e02c7;
+  background-color: #970f2352;
 }
 
 nav h1 {
-    color: #e26e02c7;
+  color: #e26e02c7;
 }
 
 div h1 {
-    color: #FF324C;
+  color: #ff324c;
 }
 
 p {
-    color: #ffc038c7;
+  color: #ffc038c7;
+  text-align: justify;
 }
 
 ul {
-    color: #ffc038c7;
+  color: #ffc038c7;
 }
 
 label {
-    color: #e26e02c7;
+  color: #e26e02c7;
 }
 
 footer {
-    color: #FF324C;
+  color: #ff324c;
 }
 
 a {
-    color: #e26e02c7;
-
+  color: #e26e02c7;
 }
 
 a:hover {
-    color: #FF324C;
-
+  color: #ff324c;
 }
 
-
 nav {
-    text-align: center;
-    border: 1px solid #FF324C;
-    border-width: 1px 40px;
-    border-radius: 90px 500px 10px;
-    padding: 20px;
+  text-align: center;
+  border: 1px solid #ff324c;
+  border-width: 1px 40px;
+  border-radius: 90px 500px 10px;
+  padding: 20px;
 }
 
 #motos {
-    text-align: center;
-    border: 1px solid #FF324C;
-    border-width: 1px 10px;
-    border-radius: 90px 100px;
-    padding: 20px;
+  text-align: center;
+  border: 1px solid #ff324c;
+  border-width: 1px 10px;
+  border-radius: 90px 100px;
+  padding: 20px;
 }
 
 #motos01 {
-    text-align: center;
-
+  text-align: center;
 }
 
 footer {
-    border: 1px solid #FF324C;
-    border-width: 1px 10px;
-    border-radius: 90px 100px;
-    padding: 10px;
-    margin: 50px 1000px 30px 0px;
+  border: 1px solid #ff324c;
+  border-width: 1px 10px;
+  border-radius: 90px 100px;
+  padding: 10px;
+  margin: 50px 1000px 30px 0px;
 }
 
 #layoutmotos {
-    text-align: center;
-    border: 1px solid #FF324C;
-    border-width: 1px 10px;
-    border-radius: 90px 100px;
-    padding: 20px;
-    margin: 20px 400px 20px 400px;
+  text-align: center;
+  border: 1px solid #ff324c;
+  border-width: 1px 10px;
+  border-radius: 90px 100px;
+  padding: 20px;
+  margin: 20px 400px 20px 400px;
 }
 
 #titulomotos {
-    text-align: center;
+  text-align: center;
+}
+.abrir-menu {
+  opacity: 0;
+}
+.fechar-menu {
+  opacity: 0;
+}
+@media (max-width: 550px) {
+  /*comando de media faz com que em determinada distancia(configurado por max-width) os ids, classes ou elementos abaixo desapareça ou apareça conforme selecionado*/
+  div > ul {
+    display: none; /*selecionei a divisão dentro da lista(menu) e coloquei para quando em tela cheia o display não aparecer(none)*/
+  }
+  div:hover > ul {
+    display: flex; /*selecionei a divisão dentro da lista(menu) e coloquei para quando passar o mouse por cima(hover) o display aparecer flexível e em coluna*/
+    flex-direction: column;
+  }
+  .abrir-menu {
+    opacity: 100%; /*coloquei para o botão configurado no html "abrir menu" ficar com opacidade 100px sempre que estiver com os padrões acima ativo*/
+    margin: 1rem;
+  }
+  div:hover .abrir-menu {
+    display: none; /*coloquei para que quando o mouse estiver em cima do botão "abrir menu" o display do botão desapareça(none)*/
+  }
+  div:hover .fechar-menu {
+    display: block; /*coloquei para que quando o mouse estiver em cima do botão "abrir menu" o display do botão "fechar menu" fique com opacidade 100%*/
+    opacity: 100%;
+    margin: 1rem;
+  }
 }

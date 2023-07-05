@@ -1,0 +1,139 @@
+:root {
+  /*- root(raiz) é o comando que sobressai todos os outros elementos no code css, adicionando variáveis no root o comando se sobressai sobre todo o CSS no site, variáveis é o que deixa um "padrão" fixo do site, como cor, fonte da letra e etc -*/
+  --backgroundcolor: #400f16;
+  --footer: #e26e02c7;
+  --font: "Times New Roman", Times, serif;
+}
+body {
+  background-color: #400f16;
+  font-family: "Times New Roman", Times, serif;
+  display: flex; /* display flex novamente para flexibilizar o ID */
+  flex-wrap: wrap; /* flex wrap faz com que o conteudo da pagina se encaixe em diversas resoluções de tela*/
+}
+.navegation {
+  /*- aqui coloquei uma classe que joguei no html na aba de navegação para colocar o menu navegação na vertical -*/
+  top: 0px;
+  left: 0px;
+  padding-bottom: 288px;
+  list-style-type: none;
+  position: fixed; /* no position fixed fiz com que o menu de navegação ficasse fixado nos ids acima "superior(top) esquerdo(left)"*/
+}
+.img2 {
+  padding-top: 40px;
+}
+@media print {
+  /*media print faz com que selecione o menu de impressão*/
+  .navegation {
+    display: none; /*display none faz com que o menu naveção não apareceça quando tento imprimir a página*/
+  }
+}
+.corpo-site {
+  position: fixed;
+  left: 290px;
+}
+header {
+  color: #ff324c;
+}
+h1 {
+  color: #e26e02c7;
+}
+
+div h1 {
+  color: #ff324c;
+}
+
+p {
+  color: #ffc038c7;
+}
+
+label {
+  color: #e26e02c7;
+}
+
+a {
+  /*quando o menu de navegação aparecer ele terá o estilo abaixo*/
+  color: #e26e02c7;
+  list-style: none;
+  color: rgb(0, 0, 0);
+  text-decoration:none;
+  padding: 6px;
+}
+a:hover {
+  /*quando o mouse estiver em cima do menu de navegação ele ficará com o background e letras das cores abaixo*/
+  background-color: rgb(116, 76, 76);
+  color: rgb(243, 5, 5);
+}
+
+nav {
+  border: 1px solid #ff324c;
+  border-width: 1px 15px;
+  border-radius: 30px 200px 5px;
+  padding: 10px;
+  color: #e26e02c7;
+  background-color: #970f2352;
+  list-style: none;
+}
+
+#motos {
+  text-align: center;
+  border: 1px solid #ff324c;
+  border-width: 1px 10px;
+  border-radius: 90px 100px;
+  padding: 20px;
+}
+
+#motos01 {
+  text-align: center;
+}
+
+footer {
+  border: 1px solid #ff324c;
+  border-width: 1px 10px;
+  border-radius: 90px 100px;
+  padding: 10px;
+  margin-top: 8px;
+  color: #ff324c;
+}
+
+#layoutmotos {
+  text-align: center;
+  border: 1px solid #ff324c;
+  border-width: 1px 10px;
+  border-radius: 90px 100px;
+  padding: 20px;
+  margin: 20px 400px 20px 400px;
+}
+
+#titulomotos {
+  text-align: center;
+}
+div > ul {
+  /*selecionei a lista dentro da divisão (especificidade) e selecionei display none para normalmente desaparecer o menu navegação*/
+  display: none;
+  background-color: rgb(75, 13, 13);
+  border: 1px solid #000000;
+  border-radius: 20px;
+  padding-bottom: 200px;
+}
+#menu {
+  /*o id menu junto com a tag display: none faz esconder o checkbox que está no html*/
+  display: none;
+}
+#menu:checked ~ ul {
+  /*checked ~ ul significa que quando o ID MENU estiver clicado os seguintes itens seguirão abaixo*/
+  display: flex; /*a lista ficará flexível e em coluna*/
+  flex-direction: column;
+}
+.fechar-menu {
+  /*o botão configurado no html como "fechar menu" normalmente não aparecerá*/
+  display: none;
+}
+#menu:checked ~ .fechar-menu {
+  /*quando o botão configurado no html como "abrir menu" estiver clicado, o botão "fechar menu" aparecerá*/
+  display: flex;
+  flex-direction: column;
+}
+#menu:checked ~ .abrir-menu {
+  /*quando o botão configurado no html como "abrir menu" estiver clicado o mesmo botão irá desaparecer*/
+  display: none;
+}
